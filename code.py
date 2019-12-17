@@ -8,3 +8,5 @@ import seaborn as sb
 # load Customer Data dataset into a pandas dataframe
 df = pd.read_csv('WA_Fn-UseC_-Telco-Customer-Churn.csv')
 
+df.head()
+print(df.shape)

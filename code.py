@@ -6,12 +6,14 @@ import seaborn as sb
 %matplotlib inline
 
 # Data Wrangling (Data Munging)
+# General Properties
 # load Customer Data dataset into a pandas dataframe
 df = pd.read_csv('WA_Fn-UseC_-Telco-Customer-Churn.csv')
-
+# visually assess the data set
 df.head()
+# shape of data set
 print(df.shape)
-
-
+# summary
+df.info()
 # check data types of each column
 df.dtypes

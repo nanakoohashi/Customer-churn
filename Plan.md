@@ -25,13 +25,13 @@
   - Association and linkage analysis.
 ## Data Understanding
 ### 1. Data acquisition
-- Data access
+#### Data access
   - Find and extract the right data for modeling.
-- Data integration
+#### Data integration
   - Combine data sets.
   - Data in relational databases must either be flattened (gathered together into one row or record), or the data map must be traversed to access the data in the databases directly through in-database access utilities, available in some analytic tools.
   - In addition to extraction, may field s of data must be transformed and new variables derived.
-- Initial data collection report
+#### Initial data collection report
 ### 2. Data Description
 - Variables
 - Cases
@@ -42,14 +42,30 @@
 - Outliers
 - Data quality report
 ## Data Preparation
-- Data cleansing: clean data
-- Data transportation: express data variables
-- Data imputation: handle missing values
-- Data weighting and balancing: are all cases treated the same?
-- Data filtering: do something about outliers and other unwanted data
-- Data abstraction: handle temporal (time-series) data
-- Data reduction: reduce the amount of data to use
-- Data sampling: records
-- Dimensionality reduction: variables
-- Data discretization: values
-- Data derivation: create new variables
+- **Data cleansing**: clean data
+- **Data transportation**: express data variables
+- **Data imputation**: handle missing values
+- **Data weighting and balancing**: are all cases treated the same?
+- **Data filtering**: do something about outliers and other unwanted data
+- **Data abstraction**: handle temporal (time-series) data
+- **Data reduction**: reduce the amount of data to use
+- **Data sampling**: records
+- **Dimensionality reduction**: variables
+- **Data discretization**: values
+- **Data derivation**: create new variables
+## Modeling
+### 1. Select Modeling Techniques
+#### Choose modeling algorithms
+How you prepare your data will depend to some degree on what modeling algorithm you choose (*e.g. if you choose a parametric statistical algorithm like multiple regression, you may have to transform variables to account for significant nonlinearity.*)
+#### Choose modeling architecture
+A simple analysis =  submitting data to the algorithm and evaluate the models created.   
+To refine models and improve performance: 
+- Some algorithms like neural nets permit you to adjust the algorithm architecture to improve performance (add hidden layers or increase the learning rate). 
+- You can create a series of models, using different algorithms (ensembles)
+- You can model on different samples of data and compare or combine results (bootstrap, jackknife resampling, and v-fold cross validation). 
+- You can build some simple feedback processes in your models to iteratively improve your model (boosting). 
+(*e.g. single analysis, ensamble etc.*)
+#### Specify modeling assumptions
+Choose an algorithm whos assumptions fit your data and your modeling goal.
+(*e.g. among neural nets, radial basis function neural net handles outliers better than an ordinary neural net*).
+### 2. Create an experimental design

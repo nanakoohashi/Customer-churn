@@ -30,6 +30,9 @@
 - **Data description:** What do the data look like?
 - **Data assessment**: How clean is the data set?
 ### 1. Data acquisition
+- Query-based data extracts from the database to flat files 
+- High-level query languages for direct access to the database 
+- Low-level connections for direct access to the database
 #### Data access
   - Find and extract the right data for modeling.
 #### Data integration
@@ -38,13 +41,20 @@
   - In addition to extraction, may field s of data must be transformed and new variables derived.
 #### Initial data collection report
 ### 2. Data Description
-- Variables
-- Cases
-- Descriptive Statistics
-- Data Description Report
+#### Variables
+#### Cases
+#### Descriptive Statistics
+- **Mean-average value**: shows the central tendency of a data set 
+- **Standard deviation**: shows the distribution of data around the mean 
+- **Minimum:** the lowest value 
+- **Maximum:** the highest value 
+- **Frequency tables:** show the frequency distribution of values in variables 
+- **Histograms:** graphic technique to show frequency values in a variable
+#### Data Description Report
 ### 3. Data Quality Assessment
 - Missing values
 - Outliers
+- Any suspicious data (miscodes, training data, plain garbage).
 - Data quality report
 ## Data Preparation
 - **Data cleansing**: clean data

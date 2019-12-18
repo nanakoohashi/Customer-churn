@@ -1,0 +1,14 @@
+ # Definitions
+ - Source data: Information from any source in any format. 
+ - Analytic file: A set of information items from (possibly) multiple sources; that information is composed into one row of information about some entity (e.g., a customer). 
+ - Record (aka case): One row in the analytic file. 
+ - Attribute: An item of data that describes the record in some way. 
+ - Variable: An attribute installed into a column (field) of the entity record. 
+ - Target variable: A variable in the entity record to be predicted by the model.  
+ - Predictor variable: A variable in the entity record that is a candidate for inclusion in the model as a predictor of the target variable. 
+ - Numeric variable: A variable with only numbers in it; it is treated as a number.  
+  - Continuous numeric variable: A number with decimal point in it, either real or implied. 
+  - Discrete numeric variable: An integer, without a decimal point, real or implied. 
+- Categorical variable: A variable with any character in it; the character may be a number, but it is treated as text. 
+- Dummy variable: A variable created for each member of the list of possible contents of a categorical variable (e.g., “red,” “green,” and “blue”). 
+- Surrogate variable: A variable that has an effect on the target variable very similar to that of another variable in the record.

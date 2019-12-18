@@ -69,3 +69,12 @@ To refine models and improve performance:
 Choose an algorithm whos assumptions fit your data and your modeling goal.
 (*e.g. among neural nets, radial basis function neural net handles outliers better than an ordinary neural net*).
 ### 2. Create an experimental design
+### 3. Build a model
+#### Set parameters
+Study the default parameters of your modeling algorithm and the theory behind these settings. Create other models and see what happens.
+#### Build various types of models
+### 4. Assess the model
+Some effecting techniques: using various tables and graphs (coincidence tables, lift charts, ROI curves, and normal probability charts).
+### 5. Evaluate the model
+Include them in a modeling report. This report will help to synthesize conclusions to form general insights about the modeling effort and to point the way to improving the results during the next modeling effort. 
+## Deployment

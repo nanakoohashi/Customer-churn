@@ -24,6 +24,11 @@
   - Bivariate scatterplots
   - Association and linkage analysis.
 ## Data Understanding
+**Basic Issues that must be resolved in this phase**
+- **Data acquisition:** How do I find the data I need for modeling? 
+- **Data integration:** How do I integrate data I find in multiple disparate data sources?
+- **Data description:** What do the data look like?
+- **Data assessment**: How clean is the data set?
 ### 1. Data acquisition
 #### Data access
   - Find and extract the right data for modeling.
@@ -78,3 +83,12 @@ Some effecting techniques: using various tables and graphs (coincidence tables, 
 ### 5. Evaluate the model
 Include them in a modeling report. This report will help to synthesize conclusions to form general insights about the modeling effort and to point the way to improving the results during the next modeling effort. 
 ## Deployment
+1. Plan model deployment
+  - Create deployment plan
+2. Plan model monitoring and maintenance
+  - Model monitoring plan
+  - Model maintenance plan
+3. Produce final report
+  - Produce final written report
+  - Produce final modeling presentation
+4. Review project.

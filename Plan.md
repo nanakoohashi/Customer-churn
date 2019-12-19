@@ -68,6 +68,7 @@
 - **Data imputation**: handle missing values
   - A reasonable estimate of a suitable data value for the data missing in a variable is better than leaving it blank.
   - Assumption of Missing Completely at Random (MCAR): This assumption is satisfied when the probability of missing values in one variable is unrelated to the value of the variable itself or to values of any other variable. If this assumption is satisfied, then values of each variable can be considered to be a random sample of all values of this variable in the underlying population from which this data set was drawn. This assumption may be unreasonable when older people refuse to list their ages more often than younger people. This assumption may be reasonable when some variable is very expensive to measure and is measured for only a subset of the data set.
+  - Assumption of Missing at Random (MAR): This assumption is satisfied when the probability of a value being missing in one variable is unrelated to the probability of missing data in another variable but may be related to the value of the variable itself. 
 - **Data weighting and balancing**: are all cases treated the same?
 - **Data filtering**: do something about outliers and other unwanted data
 - **Data abstraction**: handle temporal (time-series) data

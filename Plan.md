@@ -58,6 +58,8 @@
 - Data quality report
 ## Data Preparation
 - **Data cleansing**: clean data
+  - Validating codes against lists of acceptable values: many data mining tools offer some sort of expression language in the tool interface, which you can use to search and replace invalid codes in the data set.
+  - Deleting particularly "dirty" records: not uncommonly, many variables have values (or blanks) that are inappropriate for the data set. You should delete these records. Their inclusion in the modeling data set will only confuse the model "signal" and decrease the predictive power of the model.
 - **Data transportation**: express data variables
 - **Data imputation**: handle missing values
 - **Data weighting and balancing**: are all cases treated the same?

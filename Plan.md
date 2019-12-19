@@ -58,9 +58,10 @@
 - Data quality report
 ## Data Preparation
 - **Data cleansing**: clean data
-  - Validating codes against lists of acceptable values: many data mining tools offer some sort of expression language in the tool interface, which you can use to search and replace invalid codes in the data set.
-  - Deleting particularly "dirty" records: not uncommonly, many variables have values (or blanks) that are inappropriate for the data set. You should delete these records. Their inclusion in the modeling data set will only confuse the model "signal" and decrease the predictive power of the model.
+   - Validating codes against lists of acceptable values: many data mining tools offer some sort of expression language in the tool interface, which you can use to search and replace invalid codes in the data set.
+   - Deleting particularly "dirty" records: not uncommonly, many variables have values (or blanks) that are inappropriate for the data set. You should delete these records. Their inclusion in the modeling data set will only confuse the model "signal" and decrease the predictive power of the model.
 - **Data transportation**: express data variables
+   - Numerical variables: many parametric statistical routines assume that the effects of each variable on the target are linear. This means that as X-variable increases by an amount A, then the target variable increases by some constant multiple of the amount A. This pattern of increase forms a geometric progression. However, when the multiple is not constant, the pattern increase forms an exponential pattern. If you want to use statistical parametric statistical modeling algorithms, you should transform any variables forming exponential (nonlinear) curves. Otherwise, estimation errors caused by the violation of the assumption of linearity could invalidate predictions made by the model.
 - **Data imputation**: handle missing values
 - **Data weighting and balancing**: are all cases treated the same?
 - **Data filtering**: do something about outliers and other unwanted data

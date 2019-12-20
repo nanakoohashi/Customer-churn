@@ -90,6 +90,13 @@
     - **Multiple Imputation**: Rather than to pick a value (e.g. mean) to fill blanks, a more robust approach is to let the data decide what value to use. This approach uses multiple variables to predict what values for missing data are most likely or probable.
       - Simple random imputation: This technique calculates a regression on all the nonmissing values in all of the variables to estimate the value that is missing. This approach tends to under-estimate standard error estimates. A better approach is to do this multiple times.
       - Multiple random imputation: In these techniques, a simple random imputation is repeated multiple times. This method is more realistic, because it treats regression parameters (e.g. means) as sample values within a data distribution. An elaboration of this approach is to perform multiple random imputation m-times with different data samples. The global mean imputed value is calculated across multiple samples and multiple imputations. 
+  - Guidelines for choosing the best imputation technique to use.  
+    1. If you have a lot of cases, delete records with missing values. 
+    2. If you are using linear regression as a modeling algorithm, have a lot of data, have only a few missing values, and use listwise deletion. 
+    3. If you are using SAS, use PROC MI. 
+    4. If you have any insight as to what the value ought to be, fill missing values with reasonable values. 
+    5. Otherwise, use mean imputation. 
+    6. If the variable is very important, consider training a model to impute the missing values.
 - **Data weighting and balancing**: are all cases treated the same?
 - **Data filtering**: do something about outliers and other unwanted data
 - **Data abstraction**: handle temporal (time-series) data

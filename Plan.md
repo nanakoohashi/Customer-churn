@@ -86,6 +86,7 @@
         - Generates internally consistent matrics.
         - Only works with MCAR (MAR can lead to significant bias in the estimators).
     - **Reasonable value imputation**: Imputation of missing values with the mean of the nonmissing cases is referred to often as "mean substitution". If you can safely apply some decision rule to supply a specific value to the missing value, it may be closer to the true value than even the mean substitution would be.
+    - **Maximum Likelihood Imputation**: This technique assumes that the predictor variables are independent. It uses a function that describes the probability density map (analogous to a topographic) to calculate the likelihood of a given missing value, using cases where the value is not missing. A second routine maximizes this likelihood, analogous to finding the highest point on the topographic map.
 - **Data weighting and balancing**: are all cases treated the same?
 - **Data filtering**: do something about outliers and other unwanted data
 - **Data abstraction**: handle temporal (time-series) data

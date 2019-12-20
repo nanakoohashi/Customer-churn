@@ -69,6 +69,17 @@
   - A reasonable estimate of a suitable data value for the data missing in a variable is better than leaving it blank.
   - Assumption of Missing Completely at Random (MCAR): This assumption is satisfied when the probability of missing values in one variable is unrelated to the value of the variable itself or to values of any other variable. If this assumption is satisfied, then values of each variable can be considered to be a random sample of all values of this variable in the underlying population from which this data set was drawn. This assumption may be unreasonable when older people refuse to list their ages more often than younger people. This assumption may be reasonable when some variable is very expensive to measure and is measured for only a subset of the data set.
   - Assumption of Missing at Random (MAR): This assumption is satisfied when the probability of a value being missing in one variable is unrelated to the probability of missing data in another variable but may be related to the value of the variable itself. 
+  - Techniques for imputing data (for missing data):
+    - **Listwise (or casewise) deletion**: The entire record is deleted from the analysis. This technique is usually the default method used by many statistical and machine-learning algorithm.
+      - Advantages:
+        - Can be used for any kind of data mining analysis
+        - No special statistical methods are needed to accomplish it
+        - Safest methond when data is MCAR
+        - Good for data with variables that are completely independent (the effect of each variable on the dependent variable is not affected by the effect of any other variable)
+        - Usually, it is applicable to data sets suitable for linear regression and is even more apprpriate for use with logistic and Poisson regression.
+      - Disadvantages:
+        - You lose the nonmissing information in the record, and the total information content of your data set will be reduced.
+        - If data is MAR, listwise deletion can produce biased estimates; if saslary level depends positively on education level (i.e. salary level rises as education level rises), then listwise deletion of cases with missing salary level data will bias the analysis toward lower education levels.
 - **Data weighting and balancing**: are all cases treated the same?
 - **Data filtering**: do something about outliers and other unwanted data
 - **Data abstraction**: handle temporal (time-series) data

@@ -80,6 +80,12 @@
       - Disadvantages:
         - You lose the nonmissing information in the record, and the total information content of your data set will be reduced.
         - If data is MAR, listwise deletion can produce biased estimates; if saslary level depends positively on education level (i.e. salary level rises as education level rises), then listwise deletion of cases with missing salary level data will bias the analysis toward lower education levels.
+    - **Pairwise deletion**: This means that all cases wtih values for avariable will be used to calculate the covariance of that variable.
+      - Advantages:
+        - Linear regression can be estimated from only sample means and covariance matrix (listing covariances for each variable). 
+        - Generates internally consistent matrics.
+        - Only works with MCAR (MAR can lead to significant bias in the estimators).
+    - **Reasonable value imputation**
 - **Data weighting and balancing**: are all cases treated the same?
 - **Data filtering**: do something about outliers and other unwanted data
 - **Data abstraction**: handle temporal (time-series) data

@@ -100,6 +100,12 @@
 - **Data weighting and balancing**: are all cases treated the same?
 - **Data filtering**: do something about outliers and other unwanted data
   - Eliminating rows (cases) in order to remove unnecessary information. This is done to clarify the "signal" of the variables to be modeled. Removing unnecessary information reduces the "noise" below the level of the analysis. Anagolously, a customer attrition signal in a corporate database is an expression of a customer retention domain in a company.
+  - **Removal of Outliers**: The simplest way to handle outliers is to remove the rows that contain them. Sometimes, you want to keep the outliers (abnormal values). In fact, some outliers are of primary interest to the modeling of credit risk, fraud, and other rare events like network intrusions. For the models of "normal" responses, it might be a good idea to remove the extreme outliers by deletion of of the row or imputation of the value with a constant or the mean or median. If you leave the outliers in the data set, they will just inject noise, which will reduce the predictability of the model. But you might object that we should keep all values in the data, because we have to score values like this in our production operations of the model. You can afford to be wrong in your predictions 5% of the time, for example, for the sake of being very predictive on the other 95% of the data.
+  - **Outlier detection algorithms**:
+    - Those based on critical distance measures
+    - Those based on density measures
+    - Those based on projection characteristics
+    - Those based on data distribtuion characteristics
 - **Data abstraction**: handle temporal (time-series) data
 - **Data reduction**: reduce the amount of data to use
 - **Data sampling**: records

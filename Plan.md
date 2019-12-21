@@ -106,6 +106,8 @@
     - Those based on density measures
     - Those based on projection characteristics
     - Those based on data distribtuion characteristics
+  - **Time-Series Filtering**
+    - Low-pass filter: a low-pass filter passes data below a specified highest level of acceptability. *e.g. the higher part of the fluctuations in the 3-month T-Bill rates might be eliminated from the data set.
 - **Data abstraction**: handle temporal (time-series) data
 - **Data reduction**: reduce the amount of data to use
 - **Data sampling**: records

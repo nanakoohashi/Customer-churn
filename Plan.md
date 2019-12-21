@@ -108,6 +108,7 @@
     - Those based on data distribtuion characteristics
   - **Time-Series Filtering**
     - Low-pass filter: a low-pass filter passes data below a specified highest level of acceptability. *e.g. the higher part of the fluctuations in the 3-month T-Bill rates might be eliminated from the data set.
+    - High-pass filter: A high-pass filter does the opposite of a low-pass filter; it passes data above a specified lower level of acceptability.
 - **Data abstraction**: handle temporal (time-series) data
 - **Data reduction**: reduce the amount of data to use
 - **Data sampling**: records

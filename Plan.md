@@ -99,6 +99,7 @@
     6. If the variable is very important, consider training a model to impute the missing values.
 - **Data weighting and balancing**: are all cases treated the same?
 - **Data filtering**: do something about outliers and other unwanted data
+  - Eliminating rows (cases) in order to remove unnecessary information. This is done to clarify the "signal" of the variables to be modeled. Removing unnecessary information reduces the "noise" below the level of the analysis. Anagolously, a customer attrition signal in a corporate database is an expression of a customer retention domain in a company.
 - **Data abstraction**: handle temporal (time-series) data
 - **Data reduction**: reduce the amount of data to use
 - **Data sampling**: records

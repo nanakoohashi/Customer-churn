@@ -116,6 +116,8 @@
   - Other data abstractions:
     - Qualitative abstraction: a numeric expression is mapped to a qualitative expression. *e.g. in an analysis of teenage customer demand, compared with that of others, customers with ages between 13 and 19 could be  abstracted as a value of 1 to a variable "teenager", while others are abstracted to a value of 0.*.
     - Generalization abstraction: an instance of an occurrence is mapped to its class. *e.g. in an analysis of Asian preferences, compared with non-Asian, listings of "Chinese", "Japanese", and "Korean" in the Race variable could be abstracted to 1 in the Asian variable, while others are abstracted to a value of 0.*
+    - Definitional abstraction: in which one data element from one conceptual category is mapped its counterpart in another conceptual category. *e.g. When combining data sets from different sources for an analysis of customer demand among African-Americans, you might want to map "Caucasian" in a demographic data set and "White Anglo-Saxon Protestant" in a sociological data set to a separate variable of "Nonblack".
+    - Temporal abstraction: see above.
 - **Data reduction**: reduce the amount of data to use
 - **Data sampling**: records
 - **Dimensionality reduction**: variables

@@ -121,8 +121,13 @@
 - **Data reduction**: reduce the amount of data to use
   - Includes three general processes:
     1. Reduction of dimensionality (number of variables).
+      - Now that we have our analytic record, we can proceed to weed out unnecessary variables using the following techniques:
+        - **Correlation Coefficients**
+          - One of the simplest ways to assess variable relationships is to calculate the simple correlation coefficients between variables. A correlation matrix shos pairwise correlation coefficients. These data have been used in many texts and papers as an example of predictor variables used to predict the target variable, crime rate.
+          - From the correlation matrix we can learn two very useful things about our data set. First, we can see that the correlations of most of the variables with crime rate are relatively high and significant but that for Charles River proximity is relatively low and insignificant. This means that Charles River may not be a good variable to include in the model. The other thing we can learn is that none of the correlations of the predictor variables is greaer than 0.90. If a correlation between two variables exceeded 0.90 (a common rule-of-thumb threshold), their efficts would be too *collinear* to include in the model. Collinearity occurs when plots of two variables against the target lie on almost the same line. Too much collinearity among variables in a model (multicollinearity) will render the solution ill-behaved, which means that there is no unique optimum solution. Rather, there will be too much overlap in the effects of the collinear varaibles, making interpretation of the results problematic.
     2. Reduction of cases (records) - data sampling.
     3. Discretization of values.
+    
 - **Data sampling**: records
 - **Dimensionality reduction**: variables
 - **Data discretization**: values

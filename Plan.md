@@ -119,6 +119,10 @@
     - Definitional abstraction: in which one data element from one conceptual category is mapped its counterpart in another conceptual category. *e.g. When combining data sets from different sources for an analysis of customer demand among African-Americans, you might want to map "Caucasian" in a demographic data set and "White Anglo-Saxon Protestant" in a sociological data set to a separate variable of "Nonblack".
     - Temporal abstraction: see above.
 - **Data reduction**: reduce the amount of data to use
+  - Includes three general processes:
+    1. Reduction of dimensionality (number of variables).
+    2. Reduction of cases (records) - data sampling.
+    3. Discretization of values.
 - **Data sampling**: records
 - **Dimensionality reduction**: variables
 - **Data discretization**: values

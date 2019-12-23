@@ -149,7 +149,11 @@
     2. It can help you select only those cases in which the reponse patterns are relatively homogenous.
       - If you want to model telephone calling behavior patterns, for example, you might judge that calling behaviors are distinctly different in urban and rural areas. If you divide your data set into urban and rural segments, it is called partitioning the database. It is a good idea to build separate models on each partition. When this partitioning is done, you should randomly select cases within each defined partition. Such a sampling is called **stratified random sampling**. The partitions are the “strata” that are sampled separately.
     3. It can help you balance the occurrence of rare events for analysis by machine-learning tools. 
-      - Machine-learning tools like neural nets and decision trees are very sensitive to unbalanced data sets. An unbalanced data set is one in which one category of the target variable is relatively rare compared with the other ones. Balancing the data set involves sampling the rare categories more than average (oversampling) or sampling the common categories less often (undersampling). 
+      - Machine-learning tools like neural nets and decision trees are very sensitive to unbalanced data sets. An unbalanced data set is one in which one category of the target variable is relatively rare compared with the other ones. Balancing the data set involves sampling the rare categories more than average (oversampling) or sampling the common categories less often (undersampling).
+    4. Simple random sampling can be used to divide the data set into three data sets for analysis: 
+      a. Training set: These cases are randomly selected for use in training the model 
+      b. Testing set: These cases are used to asses the predictability of the model, before refining the model or adding model enhancements. 
+      c. Validation set: These cases are used to test the final performance of the model after all modeling is done. This sampling process is called partitioning. Most analytic tools have facilities for partitioning the data set. 
 - **Dimensionality reduction**: variables
 - **Data discretization**: values
 - **Data derivation**: create new variables

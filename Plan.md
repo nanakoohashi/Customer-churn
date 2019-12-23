@@ -127,9 +127,13 @@
           - From the correlation matrix we can learn two very useful things about our data set. First, we can see that the correlations of most of the variables with crime rate are relatively high and significant but that for Charles River proximity is relatively low and insignificant. This means that Charles River may not be a good variable to include in the model. The other thing we can learn is that none of the correlations of the predictor variables is greaer than 0.90. If a correlation between two variables exceeded 0.90 (a common rule-of-thumb threshold), their efficts would be too *collinear* to include in the model. Collinearity occurs when plots of two variables against the target lie on almost the same line. Too much collinearity among variables in a model (multicollinearity) will render the solution ill-behaved, which means that there is no unique optimum solution. Rather, there will be too much overlap in the effects of the collinear varaibles, making interpretation of the results problematic.
         - **CHAID (Chi-Square Automatic Interaction Detection)**
           - This algorithm is used occassionally as the final modeling algorithm, but it has a number of disadvantages that limit its effectiveness as a multivariate predictor. It is used more commonly for variable screening to reduce dimensionality. But even here, there is a problem of bias toward variables with more levels for splits, which can skew the interpretation of the relative importance of the predictors in explaing responses on the dependent variable. Despite the possible bias in the variable selection, it is used commonly as a variable screen method in several data mining tools (e.g. Statistica).
+        - **Principal Components Analysis (PCA)**
+          - Often used to identify some of the strong predictor variables in a data set.
+          - Reveals relationships between variables in a data set by identifying and quantifying a group of principal components.
+            - These principal components are composed of transformations of specific combinations of input variables that relate to a given output (or target variable).
+            - Each principal component accounts for a decreasing amount of the variations in the raw data set. Consequently, the first few principal components express most of the underlying structure in the data set. Principal components have been used frequently in studies as a means to reduce the number of raw variables in the data set. When this is done, the original variables are replaced by the first several principal components. In such cases, the original features are simply replaced by the first few principal components. 
     2. Reduction of cases (records) - data sampling.
     3. Discretization of values.
-    
 - **Data sampling**: records
 - **Dimensionality reduction**: variables
 - **Data discretization**: values

@@ -132,6 +132,8 @@
           - Reveals relationships between variables in a data set by identifying and quantifying a group of principal components.
             - These principal components are composed of transformations of specific combinations of input variables that relate to a given output (or target variable).
             - Each principal component accounts for a decreasing amount of the variations in the raw data set. Consequently, the first few principal components express most of the underlying structure in the data set. Principal components have been used frequently in studies as a means to reduce the number of raw variables in the data set. When this is done, the original variables are replaced by the first several principal components. In such cases, the original features are simply replaced by the first few principal components. 
+        - **Gini Index**
+          - The Gini was developed by the Italian statistician Corrado Gini in 1912, for the purpose of rating countries by income distribution. The maximum Gini Index = 1 would mean that all the income belongs to one country. The minimum Gini Index = 0 would mean that the income is even distributed among all countries. This index measures the degree of unevenness in the spread of values in the range of a variable. The theory is that variables with a relatively large amount of unevenness in the frequency distribution of values in its range (a high Gini Index value) have a higher probability to serve as a predictor variable for another related variable.
     2. Reduction of cases (records) - data sampling.
     3. Discretization of values.
 - **Data sampling**: records

@@ -143,6 +143,9 @@
     2. Reduction of cases (records) - data sampling.
     3. Discretization of values.
 - **Data sampling**: records
+  - Data sampling serves four purposes:
+    1. It can reduce the number of data cases submitted to the modeling algorithm
+      - In many cases, you can build a relatively predictive model on 10%–20% of the data cases. After that level, the addition of more cases has sharply diminishing returns. In some cases, like retail market basket analysis, you need all the cases (purchases) available. But usually, only a relatively small sample of data is necessary. This kind of sampling is called simple random sampling. The theory underlying this method is that each sample case selected has an equal chance of being selected as does any other case.
 - **Dimensionality reduction**: variables
 - **Data discretization**: values
 - **Data derivation**: create new variables

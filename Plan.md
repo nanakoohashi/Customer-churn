@@ -221,3 +221,9 @@ After your analytic data set is prepared for modeling, you must select those var
   - Increases the predictive power of the algorithm 
   - Makes the results more understandable 
 - Therefore, one of the first jobs of the data miner is to develop a short list of variables. This abbreviated list will include (hopefully) only those variables that significantly increase the predictive power and the generalizing ability of the model.
+## Types of Feature Selection
+1. Feature Ranking Methods
+  - Include the use of statistical metrics, like the correlation coefficient. A more complex feature ranking method is the Gini Index.
+    - **Gini Index**
+      - The Gini Index can be used to quantify the unevenness in variable distributions and income distributions among countries. The theory behind the Gini Index relies on the difference between a theoretical equality of some quantity and its actual value over the range of a related variable. This concept was introduced by Max O. Lorenz in 1905 to represent the unequal distribution of income among countries. 
+2. Best Subset Selection

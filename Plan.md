@@ -213,3 +213,5 @@ Include them in a modeling report. This report will help to synthesize conclusio
   - Produce final written report
   - Produce final modeling presentation
 4. Review project.
+# Feature Selection
+After your analytic data set is prepared for modeling, you must select those variables (or features) to use as predictors. This process of feature selection is a very important strategy to follow in preparing data for data mining. A major problem in data mining in large data sets with many potential predictor variables is the **curse of dimensionality** (the increasing difficulty in training a model when more predictor variables are added to it). 

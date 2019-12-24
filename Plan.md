@@ -178,6 +178,7 @@ The value 3934.31 is the average radius of the Earth in miles, and output is the
     2. oversampling the rare target class; 
     3. use weights associated with each variable, if the algorithm contains that feature; and 
     4. use prior probabilities, if the algorithm contains that feature.
+- **Segmentation:** This is another example of the input of business knowledge in the analytic process. You might know (or strongly suspect) that the phone calling behavior of urban customers is quite different from that of rural customers. You might decide that you want to separate the rural from the urban customers and build separate models for each. In order to do that, you must divide the original data set into two pieces, one for rural customers and one for urban customers. This process is called data segmentation. 
 ## Modeling
 ### 1. Select Modeling Techniques
 #### Choose modeling algorithms

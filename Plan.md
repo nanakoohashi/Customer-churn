@@ -156,6 +156,12 @@
       c. Validation set: These cases are used to test the final performance of the model after all modeling is done. This sampling process is called partitioning. Most analytic tools have facilities for partitioning the data set. 
 - **Dimensionality reduction**: variables
 - **Data discretization**: values
+  - Some machine-learning techniques can work with only categorical predictor variables, not continuous numeric variables. You can convert a continuous numeric variable into a series of categories by assigned subranges of the value range to a group of new variables. For example, a variable ranging from 1 to 100 could be discretized (converted into discrete values) by dividing the range in four subranges, 0–25, 26–50, 51–75, and 76–100. Another name for these subranges is “bins.” In the binning process, each value in the range of a variable is replaced by a bin number. Many data mining packages have binning facilities to create these subranges automatically. One of the attributes of the binning process is that it reduces “noise” in the data. To that extent, binning is a form of data smoothing. Credit scores are created using bins, in which bin boundaries are tuned and engineered to maximize the predictive power of the credit scoring model. The scorecard module in the Fair Isaac Model Builder tool is used to produce the FICO credit score. It uses a range engineering approach in the process of interactive binning to maximize the information content (IV) and weight of evidence (WOE) associated with a specific binning design. The IV provides a measure of the loss of information when bins are combined. The WOE relates the proportion of good credit scores with bad credit scores in each bin for that variable in the training data set. This approach to prediction engineers the data to maximize the predictability of a very simple linear programming modeling algorithm. Data preparation process:
+    - Recoding data
+    - Transforming data
+    - Binning data
+    - Smoothing data
+    - Clustering data
 - **Data derivation**: create new variables
 ## Modeling
 ### 1. Select Modeling Techniques

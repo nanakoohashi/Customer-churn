@@ -241,5 +241,6 @@ After your analytic data set is prepared for modeling, you must select those var
           - Less precise than linear stepwise regression, but the neural net set of variables may be much more generalizable, by virtue of their ability to capture non-linear relationships effectively.
     - Complex Methods 
       - A piecewise linear network uses a distance measure to assign incoming cases to an appropriate cluster. The clusters can be defined by any appropriate clustering method. A separate function called a basis function is defined for each cluster of cases. A pruning algorithm can be applied to eliminate the least important clusters, one at a time, leading to a more compact network. This approach can be viewed as a nonlinear from of stepwise linear regression.
-
+      - Multiple Adaptive Regression Splines (MARS):
+        - The MARS algorithm solves regression and classification problems with multiple outcomes (target variables). This approach can be viewed as a form of piecewise linear regression, which adapts a solution to local data regions of similar linear response. Each of the local regions is expressed by a different basis function. MARS algorithms can also be viewed as a form of regression trees, in which the “hard” splits into separate branches of the tree are replaced by the smooth basis functions.
 2. Best Subset Selection

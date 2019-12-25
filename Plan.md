@@ -267,3 +267,26 @@ The following tools can help the data miner:
 - Model management tools: data mining workspace libraries, templates, and projects 
 - Modeling analysis tools: feature selection; model evaluation tools. (Note: This topic will be expanded in Chapter 11.) 
 - Miscellaneous tools: in-place data processing (IDP) tools, rapid deployment tools, and model monitoring tools Being able to use these tools properly can be very helpful in the identification of significant variables, facilitating rapid decision-making necessary to compete successfully in the global marketplace.
+## Basic Descriptive Statistics 
+### Measures of Location 
+- Mean: the average for all observations in the range of a variable 
+- Median: the middle observation in a sorted list of values in the range for a given variable 
+- Mode: the most frequently occurring value
+### Measures of Dispersion 
+- Variance: a measure of the variability of squared values around the mean 
+- Standard deviation: the square root of the variance 
+- If the data are tightly clustered around the mean, the variance and standard deviation are relatively low. If the data are widely scattered around the mean, the variance and standard deviation are relatively high.
+### Range 
+- Maximum: the highest value in the range of a variable 
+- Minimum: the lowest value in the range of a variable 
+- Together with the mean and standard deviation, the maximum and minimum values can be useful in identifying outliers (values so much higher or so much lower than the vast majority of values that they appear to be the result of another process). Outliers may be mistaken readings, garbage data, or they may be very rare but valid measurements. Sometimes apparent outliers are the very values that may contain a disproportionately large amount of the signal of the target variable. The data miner is justified in deleting mistaken readings and garbage data. Under certain conditions, you might be justified in deleting even the very rare by valid measurements, because doing so will reduce the variance in the range of a variable, making it a stronger predictor of the target. In any event, the data miner should decide how to handle outliers in the context of the problem and his or her domain knowledge.
+### Measures of Position 
+- Quantiles: a portion of the total number of observations. Quantiles are usually names according to the number of portions into which the range is divided. 
+- Quartiles: 4 portions. 
+- Quintiles: 5 portions. 
+- Deciles: 10 portions. 
+- Percentiles: 100 portions. There are many types of percentiles, including the following: 
+- The PTH percentile: value where at least p percent of the items are less than or equal to this value and (100 − p)% of the items are greater than or equal to this value 
+- Median percentile: 50th percentile
+- Q1: first quartile = 25th percentile 
+- Q3: third quartile = 75th percentile

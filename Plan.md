@@ -244,3 +244,12 @@ After your analytic data set is prepared for modeling, you must select those var
       - Multiple Adaptive Regression Splines (MARS):
         - The MARS algorithm solves regression and classification problems with multiple outcomes (target variables). This approach can be viewed as a form of piecewise linear regression, which adapts a solution to local data regions of similar linear response. Each of the local regions is expressed by a different basis function. MARS algorithms can also be viewed as a form of regression trees, in which the “hard” splits into separate branches of the tree are replaced by the smooth basis functions.
 2. Best Subset Selection
+- This approach to feature selection evaluates a subset of features, which have significant effect on as a group for suitability. The most common subset selection approaches are wrapper-  based. Wrappers use a search algorithm to search through the space of possible features and evaluate each subset by running a model on the subset. Some wrapper methods perform this evaluation with different randomly selected subsets, using a cross validation method. Cross validation divides the data set into a number of subsets for each group of features and evaluates a model trained on all but one subset. The subset not used for the model is used to validate the model for that iteration. During the next iteration, a different random subset is used for validation. One way to use wrapper-based feature selection methods cheaply is to use RapidMiner, a GNU open-source data mining package. RapidMiner provides four feature selection methods:
+  - Backward selection (feature selection), using multiple subsets 
+  - Feature weighting using nearest neighbor 
+  - Wrapper-based feature selection 
+  - Automatic feature selection 
+- The Feature Selection node in STATISTICA Data Miner (SDM) is very easy to use, especially in the “Data Miner Workspace” and also automatically behind the scenes without the user having to do anything in the “Data Miner Recipe” format. SDM has three formats for doing data mining: 
+  1. Interactive module, where “Feature Selection” is available 
+  2. Data Miner Workspace, where the user has the most control over “Feature Selection” 
+  3. Data Miner Recipe, where “Feature Selection” is basically automatic

@@ -259,3 +259,11 @@ Considering the relatively little effect of feature selection on the German Cred
 2. All prediction algorithms work better with fewer variables, because the complexity and dimensionality of the decision space is relatively smaller and the algorithm has to evaluate many fewer possibilities (candidate trees in the case of C&RT). Without feature selection, it is true that inclusion of more variables in the model may increase the probability of gaining more important predictors but it also increase the complexity of the mathematical solution exponentially. This is referred to as the curse of dimensionality. Feature selection with a competent algorithm can minimize the effects of dimensionality that plagues all predictive algorithms. 
 3. Some data sets have far too many variables to process efficiently with machine-learning or statistical analysis algorithms. For example, the KDD Cup 2001 competition data set had 139,000 variables and only about 2000 cases! It is crucial in cases like this to use feature selection to reduce the variable count. 
 - There are two other ways to use feature selection facilities in SDM: (1) the Interactive Menus Interface and (2) the DMRecipes automated modeling interface.
+# Accessory Tools for Doing Data Mining
+The following tools can help the data miner:
+- Data access tools: SQL and other database query languages 
+- Data integration tools: extract-transform-load (ETL) tools to access, modify, and load data from different structures and formats into a common output format (e.g., database and flat file) 
+- Data exploration tools: basic descriptive statistics, particularly frequency tables; slicing, dicing, and drill downs 
+- Model management tools: data mining workspace libraries, templates, and projects 
+- Modeling analysis tools: feature selection; model evaluation tools. (Note: This topic will be expanded in Chapter 11.) 
+- Miscellaneous tools: in-place data processing (IDP) tools, rapid deployment tools, and model monitoring tools Being able to use these tools properly can be very helpful in the identification of significant variables, facilitating rapid decision-making necessary to compete successfully in the global marketplace.

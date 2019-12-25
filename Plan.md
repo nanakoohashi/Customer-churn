@@ -239,4 +239,7 @@ After your analytic data set is prepared for modeling, you must select those var
       - **Sensitivity Analysis**
         - Some machine-learning algorithms (like neural nets) provide an output report that evaluates the final weights assigned to each variable to calculate how sensitive the solution is to the inclusion of that variable. These sensitivity values are analogous to the F-values calculated for the inclusion of each variable in stepwise regression. 
           - Less precise than linear stepwise regression, but the neural net set of variables may be much more generalizable, by virtue of their ability to capture non-linear relationships effectively.
+    - Complex Methods 
+      - A piecewise linear network uses a distance measure to assign incoming cases to an appropriate cluster. The clusters can be defined by any appropriate clustering method. A separate function called a basis function is defined for each cluster of cases. A pruning algorithm can be applied to eliminate the least important clusters, one at a time, leading to a more compact network. This approach can be viewed as a nonlinear from of stepwise linear regression.
+
 2. Best Subset Selection

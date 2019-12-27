@@ -331,6 +331,7 @@ In practically every research project, an initial examination of the data set us
   - Probabilistic network (PNN)—consisting of 3–4 layers 
   - Generalized regression (GRNN)—trains quickly but executes slowly 
   - Deep learning—ANNs with more than one hidden layer, may be recurrent in design
+  - Kohonen neural nets (Kohonen, 1982)—used for classification. This type of neural network is sometimes called a “self-organizing” neural net. The operation of it is to iteratively classify inputs, until the combined difference between classes is maximized. This algorithm can be used as a simple way to cluster data, if the number of cases or categories is not particularly large. For data sets with a large number of categories, it can take a very long time to train the network. 
 - Generalized additive models (e.g., regression models) 
 - General classification/regression tree models 
 - General CHAID models 

@@ -326,7 +326,11 @@ In practically every research project, an initial examination of the data set us
   - Momentum
   - Number of Nodes in the Middle Layer
   - Number of Middle Layers to Add
- 
+ - **Additional Types of Neural Networks**
+  - Linear networks—two layers (input and output layer), does not handle complexities well and can be considered as a “baseline model”     - Bayesian networks 
+  - Probabilistic network (PNN)—consisting of 3–4 layers 
+  - Generalized regression (GRNN)—trains quickly but executes slowly 
+  - Deep learning—ANNs with more than one hidden layer, may be recurrent in design
 - Generalized additive models (e.g., regression models) 
 - General classification/regression tree models 
 - General CHAID models 

@@ -320,6 +320,13 @@ In practically every research project, an initial examination of the data set us
   - They may be relatively slow, especially in the training phase but also in the application phase. 
   - It is difficult to determine how the net is making its decision or to identify the important predictors in the solution. It is for these reasons that neural nets have the reputation of being a “black box.” 
   - No hypotheses are tested, and no P-values are available in the output for comparing variables.
+ - **Modeling a manually configured ANN**
+  - Learning Rate
+  - Learning Rate Decay
+  - Momentum
+  - Number of Nodes in the Middle Layer
+  - Number of Middle Layers to Add
+ 
 - Generalized additive models (e.g., regression models) 
 - General classification/regression tree models 
 - General CHAID models 

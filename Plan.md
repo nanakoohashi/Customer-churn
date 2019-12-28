@@ -354,8 +354,12 @@ In practically every research project, an initial examination of the data set us
     - A “stopping” rule for deciding when a subtree is complete 
     - Assigning each terminal “leaf” node to a class outcome (prediction)
   - Trees recursively partition the data, creating at each step more homogenous groups. The resulting “rules” are the paths it takes to get from the “root” node to each “leaf” node. 
-- Generalized additive models (e.g., regression models) 
-- General classification/regression tree models 
+- **Recursive Partitioning** 
+  - Once a best split if found, CART repeats the search process for each node below (“child” nodes), until further splitting is either stopped by a criterion or is impossible. Common stopping conditions include the following: 
+    - Minimum number of cases 
+    - A certain fraction of the total number of cases is in the node 
+    - A maximum number of levels of splitting has been achieved 
+    - The maximum number of nodes has been reached
 - General CHAID models 
 - Generalized EM and k-means cluster analysis advanced data mining algorithms —interactive trees (CART or C&RT and CHAID) 
 - Boosted tree classifiers and regression 

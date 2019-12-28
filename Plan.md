@@ -371,3 +371,7 @@ In practically every research project, an initial examination of the data set us
 - Predictive quality control 
 - Root cause analysis 
 - Response optimization for data mining models
+# Model Evaluation and Enhancement
+- Cross validation resampling method 
+- Bootstrap 
+- Jackknife

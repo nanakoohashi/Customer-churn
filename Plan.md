@@ -332,12 +332,18 @@ In practically every research project, an initial examination of the data set us
   - Generalized regression (GRNN)—trains quickly but executes slowly 
   - Deep learning—ANNs with more than one hidden layer, may be recurrent in design
   - Kohonen neural nets (Kohonen, 1982)—used for classification. This type of neural network is sometimes called a “self-organizing” neural net. The operation of it is to iteratively classify inputs, until the combined difference between classes is maximized. This algorithm can be used as a simple way to cluster data, if the number of cases or categories is not particularly large. For data sets with a large number of categories, it can take a very long time to train the network. 
-  - Radial Basis Function (RBF) 
+  - **Radial Basis Function (RBF)**
     - Networks RBFs are similar to MLPs with three layers (input, middle or “hidden” layer, and output). Also like MLPs, RBFs can model any nonlinear function easily. The major difference between the two networks is that an RBF does not input raw input data but rather it passes a distance measure from the inputs to the hidden layer. This distance is measured from some center value in the range of the variable (sometimes the mean) to a given input value in terms of a Gaussian function These distances are transformed into similarities that become the data features worked with in a succeeding regression step. This nonlinear function can permit the mapping operation to capture many nonlinear patterns in the input data. The processing of RBFs (like any neural network) is iterative. The weights associated with the hidden nodes are adjusted following some strategy (like back propagation). If a large enough RBF is run through enough iterations, it can approximate almost any function almost perfectly; that is, it is theoretically a universal approximator. The problem with RBF processing (like with the MLP) is the tendency to overtrain the model.
    - **Advantages of RBFs**
     - RBFs can model any nonlinear function using a single hidden layer, which removes some design decisions about numbers of layers to use for the networks like the MLP. The simple linear transformation in the output layer can be optimized fully using traditional linear modeling techniques, which are fast and do not suffer from problems such as local minima which plague MLP training techniques. RBF networks can therefore be trained extremely quickly (i.e., orders of magnitude faster than MLPs).
    - **Disadvantages of RBFs**
     - On the other hand, before linear optimization can be applied to the output layer of an RBF network, the number of radial units must be decided, and their centers and deviations must be set. Although faster than MLP training, the algorithms to do this are equally prone to discovering suboptimal combinations.
+ - **Classification and Regression Trees (CART)**
+  - Key elements defining a decision tree algorithm are the following: 
+    - Rules at a “node” for splitting the data according to its value on one variable ◦ These splits are made at a “cut point,” determined by heuristics 
+    - A “stopping” rule for deciding when a subtree is complete 
+    - Assigning each terminal “leaf” node to a class outcome (prediction)
+  - Trees recursively partition the data, creating at each step more homogenous groups. The resulting “rules” are the paths it takes to get from the “root” node to each “leaf” node. 
 - Generalized additive models (e.g., regression models) 
 - General classification/regression tree models 
 - General CHAID models 

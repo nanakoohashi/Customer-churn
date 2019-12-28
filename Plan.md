@@ -338,6 +338,8 @@ In practically every research project, an initial examination of the data set us
     - RBFs can model any nonlinear function using a single hidden layer, which removes some design decisions about numbers of layers to use for the networks like the MLP. The simple linear transformation in the output layer can be optimized fully using traditional linear modeling techniques, which are fast and do not suffer from problems such as local minima which plague MLP training techniques. RBF networks can therefore be trained extremely quickly (i.e., orders of magnitude faster than MLPs).
    - **Disadvantages of RBFs**
     - On the other hand, before linear optimization can be applied to the output layer of an RBF network, the number of radial units must be decided, and their centers and deviations must be set. Although faster than MLP training, the algorithms to do this are equally prone to discovering suboptimal combinations.
+ - **Automated Neural Nets**
+  - Several data mining tools offer neural nets that have “smart” search algorithms to choose the appropriate starting points for their parameters. But, the biggest benefit of these algorithms is that they search over the decision surface with different initial learning rates (which also decay between iterations), different momentums, and different number of nodes in the middle layer. Usually, you have to choose the number of middle layers to use before the algorithm takes over. 
  - **Classification and Regression Trees (CART)**
   - Key elements defining a decision tree algorithm are the following: 
     - Rules at a “node” for splitting the data according to its value on one variable ◦ These splits are made at a “cut point,” determined by heuristics 

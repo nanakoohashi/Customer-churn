@@ -340,6 +340,14 @@ In practically every research project, an initial examination of the data set us
     - On the other hand, before linear optimization can be applied to the output layer of an RBF network, the number of radial units must be decided, and their centers and deviations must be set. Although faster than MLP training, the algorithms to do this are equally prone to discovering suboptimal combinations.
  - **Automated Neural Nets**
   - Several data mining tools offer neural nets that have “smart” search algorithms to choose the appropriate starting points for their parameters. But, the biggest benefit of these algorithms is that they search over the decision surface with different initial learning rates (which also decay between iterations), different momentums, and different number of nodes in the middle layer. Usually, you have to choose the number of middle layers to use before the algorithm takes over. 
+ - **Generalized Additive Models (GAM)**
+  - As theory of general linear models (GLMs) developed in the 1980s, the need for an increasing number of predictor variables was recognized as a key issue. The problem with increasing the number of predictor variables is that the variance increases also. The higher the variance, the harder it is for a prediction algorithm to perform well (perform acceptably on new data). This is one aspect of the “curse of dimensionality.” To bypass this problem, Stone (1986) proposed the modification of the GLM by replacing the definition of each predictor variable with an additive approximation term. This approximation is performed with a linear univariate smoothing function. This approach avoided the curse of dimensionality by performing a simple fitting of each predictor variable to the dependent variable. The new approach also expressed the definition of each predictor variable such that it was possible to relate how the variable affected the dependent variable. Remember, in the standard multiple linear regression (MLR) equation, the estimated coefficients represent effects of differing scale and differing relationships to the dependent variable. Consequently, you can't analyze the MLR coefficients directly to determine relationships. But with the enhancement by Stone, one can see these relationships directly. Still, the cost of that enhancement was a decrease in generalization (ability to perform acceptably on new data). 
+  - Typical outputs of GAMs include the following: 
+    - Iteration history of model fitting 
+    - Summary statistics, including R2 
+    - Residual tables and plots 
+    - Scatterplots of observed versus predicted values 
+    - Normal probability plots
  - **Classification and Regression Trees (CART)**
   - Key elements defining a decision tree algorithm are the following: 
     - Rules at a “node” for splitting the data according to its value on one variable ◦ These splits are made at a “cut point,” determined by heuristics 

@@ -360,6 +360,10 @@ In practically every research project, an initial examination of the data set us
     - A certain fraction of the total number of cases is in the node 
     - A maximum number of levels of splitting has been achieved 
     - The maximum number of nodes has been reached
+  - Conditions under which further splitting is impossible include when 
+    - only one case is left in a node, 
+    - all cases are duplicates of each other, 
+    - the node is pure (all target values agree).
 - General CHAID models 
 - Generalized EM and k-means cluster analysis advanced data mining algorithms —interactive trees (CART or C&RT and CHAID) 
 - Boosted tree classifiers and regression 

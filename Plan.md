@@ -375,3 +375,8 @@ In practically every research project, an initial examination of the data set us
 - Cross validation resampling method 
 - Bootstrap 
 - Jackknife
+## TYPES OF ERRORS IN ANALYTICAL MODELS
+Errors can be classified into two general types: random error and systematic error. Random error is attributable to random variation in the target value “signal” caused by factors that cannot be accounted for by the predictor variables of even a perfect model. But no model is perfect. All modeling algorithms have strengths and weaknesses, which cause errors in the predicted values. Systematic error is caused by weaknesses in the random sampling and processing operations of the modeling algorithm or errors in model specification. We will consider evaluation methods based on the following: 
+- Analyses of the predictive power of the model, apart from error 
+- Analyses of random error in the model 
+- Analyses of systematic error in the model

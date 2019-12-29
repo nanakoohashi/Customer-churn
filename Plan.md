@@ -364,6 +364,13 @@ In practically every research project, an initial examination of the data set us
     - only one case is left in a node, 
     - all cases are duplicates of each other, 
     - the node is pure (all target values agree).
+ - **Pruning Trees**
+  - Rather than focusing on when to stop pruning, CART trees are grown larger than they need to be and then pruned back to find the best tree. CART determines the best tree by using the testing data set or by the process of V-fold cross validation. The testing validation is performed by scoring the tree with the data set not used for training the model. Cross validation is a form of resampling, which draws a number of samples from the entire distribution and trains models on all samples. The V-fold cross validation is performed by the following: 
+    1. Partitioning the entire data set in to a number (V) of parts (folds) 
+    2. Training V models on different combinations of V-1 folds, with the error estimated each time using the Vth fold 
+    3. Using the mean (and sigma) of the V error measurements to estimate tree accuracy on new data 
+    4. Choose the design parameters (e.g., complexity penalty) that minimize the error in step 3 
+    5. Refit the tree, using all the data and using the parameters of step 4
 - General CHAID models 
 - Generalized EM and k-means cluster analysis advanced data mining algorithms —interactive trees (CART or C&RT and CHAID) 
 - Boosted tree classifiers and regression 

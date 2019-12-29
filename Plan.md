@@ -380,7 +380,13 @@ In practically every research project, an initial examination of the data set us
     6. CART is affected but only locally by outliers in the output variable. 
     7. CART can accept any combination of categorical and continuous variables.
     8. CART can adjust for samples stratified on a categorical dependent variable.
-    9. CART can process cases with missing values; the cases are not deleted
+    9. CART can process cases with missing values; the cases are not deleted.
+  - Advantages of CART Over Other Decision Trees 
+    1. You can relax the stopping rules to “overgrow” decision trees and then prune back the tree to the optimal size. This approach minimizes the probability that important structure in the data set will overlooked by stopping too soon. 
+    2. CART incorporates both testing with a test data set and cross validation to assess the goodness of fit more accurately. 
+    3. CART can use the same variables more than once in different parts of the tree. This capability can uncover complex interdependencies between sets of variables.
+    4. CART can be used in conjunction with other prediction methods to select the input set of variables. 
+    5. CART can be incorporated into hybrid models, where CART feeds inputs to a neural network model (which itself cannot select variables). 
 - General CHAID models 
 - Generalized EM and k-means cluster analysis advanced data mining algorithms —interactive trees (CART or C&RT and CHAID) 
 - Boosted tree classifiers and regression 

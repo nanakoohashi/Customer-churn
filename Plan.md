@@ -371,6 +371,16 @@ In practically every research project, an initial examination of the data set us
     3. Using the mean (and sigma) of the V error measurements to estimate tree accuracy on new data 
     4. Choose the design parameters (e.g., complexity penalty) that minimize the error in step 3 
     5. Refit the tree, using all the data and using the parameters of step 4
+  - General Comments About CART for Statisticans 
+    1. CART is nonparametric and does not require specification of a data distribution. 
+    2. The final modeling variables are not selected beforehand, but automatically by the algorithm.
+    3. There is no need to transform data to be consistent with a given mathematical function. Monotonic transformations will have no effect. 
+    4. Very complex interaction patterns can be analyzed. 
+    5. CART is not significantly affected outliers in the input space. 
+    6. CART is affected but only locally by outliers in the output variable. 
+    7. CART can accept any combination of categorical and continuous variables.
+    8. CART can adjust for samples stratified on a categorical dependent variable.
+    9. CART can process cases with missing values; the cases are not deleted
 - General CHAID models 
 - Generalized EM and k-means cluster analysis advanced data mining algorithms —interactive trees (CART or C&RT and CHAID) 
 - Boosted tree classifiers and regression 

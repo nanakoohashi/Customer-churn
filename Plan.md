@@ -393,9 +393,11 @@ In practically every research project, an initial examination of the data set us
     3. Variable selection. Cart can be used to create the short list of predictor variables to submit to the modeling algorithm. There is no guarantee that the variables most useful for a tree will also prove most useful for a neural network or other function, but in practice, this is a useful technique. 
     4. The use of predictors multiple times in the tree helps to detect complex interactions in the data. 
     5. CART can handle missing values by identifying surrogate (alternate) splitting rules. During training, after the best split is found for a node, new splits using other variables are scored according to their similarity in distributing the data to the left and right child nodes. The best five or so are then stored as backup or surrogate questions to ask should the main variable not be available.
-
-
-- General CHAID models 
+- **General CHAID Models**
+  - CHAID is an acronym for chi-squared automatic interaction detector. CHAID differs from CART by allowing multiple splits on a variable. For classification problems, it relies on the chi-squared test to determine the best split at each step. For regression problems (with a continuous target variable), it uses the F-test. Key elements of the CHAID process are as follows: 
+    1. Preparing the predictor variables—Continuous variables are “binned” to create a set of categories, where each category is a subrange along the entire range of the variable. This binning operation permits CHAID to accept both categorical and continuous inputs, although it internally only works with categorical variables. 
+    2. Merging categories—The categories of each variable are analyzed to determine which ones can be merged safely to reduce the number of categories. 
+    3. Selecting the best split—The algorithm searches for the split point with the smallest adjusted P-value (probability value that can be related to significance). 
 - Generalized EM and k-means cluster analysis advanced data mining algorithms —interactive trees (CART or C&RT and CHAID) 
 - Boosted tree classifiers and regression 
 - MARSplines (multivariate adaptive regression splines) 

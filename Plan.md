@@ -393,6 +393,10 @@ In practically every research project, an initial examination of the data set us
     3. Variable selection. Cart can be used to create the short list of predictor variables to submit to the modeling algorithm. There is no guarantee that the variables most useful for a tree will also prove most useful for a neural network or other function, but in practice, this is a useful technique. 
     4. The use of predictors multiple times in the tree helps to detect complex interactions in the data. 
     5. CART can handle missing values by identifying surrogate (alternate) splitting rules. During training, after the best split is found for a node, new splits using other variables are scored according to their similarity in distributing the data to the left and right child nodes. The best five or so are then stored as backup or surrogate questions to ask should the main variable not be available.
+  - Advantages of CHAID 
+    1. It is fast! 
+    2. CHAID builds “wider” decision trees, because it is not constrained (like CART) to make binary splits, making it very popular in market research. 
+    3. CHAID may yield many terminal nodes connected to a single branch, which can be conveniently summarized in a simple two-way contingency table, with multiple categories for each variable. 
 - **General CHAID Models**
   - CHAID is an acronym for chi-squared automatic interaction detector. CHAID differs from CART by allowing multiple splits on a variable. For classification problems, it relies on the chi-squared test to determine the best split at each step. For regression problems (with a continuous target variable), it uses the F-test. Key elements of the CHAID process are as follows: 
     1. Preparing the predictor variables—Continuous variables are “binned” to create a set of categories, where each category is a subrange along the entire range of the variable. This binning operation permits CHAID to accept both categorical and continuous inputs, although it internally only works with categorical variables. 

@@ -387,6 +387,14 @@ In practically every research project, an initial examination of the data set us
     3. CART can use the same variables more than once in different parts of the tree. This capability can uncover complex interdependencies between sets of variables.
     4. CART can be used in conjunction with other prediction methods to select the input set of variables. 
     5. CART can be incorporated into hybrid models, where CART feeds inputs to a neural network model (which itself cannot select variables). 
+  - Uses of CART 
+    1. CART is simple! 
+    2. Data preparation. Classical statistical models require that the analyst has a clear understanding of the nature of the function inherent in the data to be modeled. CART requires very little inputs for the beginning data miner.
+    3. Variable selection. Cart can be used to create the short list of predictor variables to submit to the modeling algorithm. There is no guarantee that the variables most useful for a tree will also prove most useful for a neural network or other function, but in practice, this is a useful technique. 
+    4. The use of predictors multiple times in the tree helps to detect complex interactions in the data. 
+    5. CART can handle missing values by identifying surrogate (alternate) splitting rules. During training, after the best split is found for a node, new splits using other variables are scored according to their similarity in distributing the data to the left and right child nodes. The best five or so are then stored as backup or surrogate questions to ask should the main variable not be available.
+
+
 - General CHAID models 
 - Generalized EM and k-means cluster analysis advanced data mining algorithms —interactive trees (CART or C&RT and CHAID) 
 - Boosted tree classifiers and regression 

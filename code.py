@@ -41,9 +41,9 @@ Discuss each column here:
 - `PaymentMethod` - may play a role in a customer leaving the company. This column will be included.
 - `MonthlyCharges` - may play a role in a customer leaving the company. This column will be included.
 - `TotalCharges` - may play a role in a customer leaving the company. This column will be included.
-- `Churn` - whether or not the customer has left the company. This is what I will be predicting."""
+- `Churn` - whether or not the customer has left the company. This is what I will be predicting.
 ## Issues
-- We have some non-numeric data
+- We have some non-numeric data"""
 
 # Model Outcomes
 ## Two classes:

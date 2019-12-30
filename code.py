@@ -20,3 +20,13 @@ df.info()
 df.dtypes
 # Count how many churners and non-churners the dataset contains. 
 df['Churn'].value_counts()
+# Model Outcomes
+## Two classes:
+### yes = Customer will churn.
+### no = Customer will not churn.
+# Exploratory Analysis
+## Differences between churners and non-churners
+### Do churners call customer service more often?
+### Does one state have more churners compared to another?
+## Grouping and summarizing data
+### .groupby()

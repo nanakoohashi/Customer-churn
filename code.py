@@ -30,3 +30,5 @@ df['Churn'].value_counts()
 ### Does one state have more churners compared to another?
 ## Grouping and summarizing data
 ### .groupby()
+# Group df by 'Churn' and compute the mean
+df.groupby(['Churn']).mean()

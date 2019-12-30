@@ -32,3 +32,6 @@ df['Churn'].value_counts()
 ### .groupby()
 # Group df by 'Churn' and compute the mean
 df.groupby(['Churn']).mean()
+df.groupby(['Churn']).median()
+# Group df by 'Churn' and compute the standard deviation
+df.groupby(['Churn']).std()

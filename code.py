@@ -5,9 +5,10 @@ import matplotlib.pyplot as plt
 import seaborn as sb
 %matplotlib inline
 
+# load Customer Data dataset into a pandas dataframe
+
 # Data Wrangling (Data Munging)
 # General Properties
-# load Customer Data dataset into a pandas dataframe
 df = pd.read_csv('WA_Fn-UseC_-Telco-Customer-Churn.csv')
 # visually assess the data set
 df.head()
@@ -17,3 +18,5 @@ print(df.shape)
 df.info()
 # check data types of each column
 df.dtypes
+# Count how many churners and non-churners the dataset contains. 
+df['Churn'].value_counts()

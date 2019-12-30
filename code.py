@@ -18,6 +18,10 @@ print(df.shape)
 df.info()
 # check data types of each column
 df.dtypes
+# check duplicates within data set
+sum(df.duplicated())
+# check null entries within data set
+df.isnull().sum()
 # Count how many churners and non-churners the dataset contains. 
 """df['Churn'].value_counts()
 Discuss each column here:

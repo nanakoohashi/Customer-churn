@@ -66,6 +66,7 @@ df.loc[df['TotalCharges'].isna()==True]
 df[df['TotalCharges'].isna()==True] = 0
 # Unique values for categorical column entries
 df.gender.unique()
+df.Partner.unique()
 # Group df by 'Churn' and compute the mean
 df.groupby(['Churn']).mean()
 df.groupby(['Churn']).median()

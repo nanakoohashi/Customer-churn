@@ -64,6 +64,8 @@ df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors = 'coerce')
 df.loc[df['TotalCharges'].isna()==True]
 # `tenure = 0` for `TotalCharges` columns. Convert TotalCharges to 0 for these entries.
 df[df['TotalCharges'].isna()==True] = 0
+# Unique values for categorical column entries
+df.gender.unique()
 # Group df by 'Churn' and compute the mean
 df.groupby(['Churn']).mean()
 df.groupby(['Churn']).median()

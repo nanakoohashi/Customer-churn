@@ -62,6 +62,8 @@ Discuss each column here:
 # Total charges contain entries that are not floats. Use ‘coerce’ - invalid parsing will be set as NaN
 df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors = 'coerce')
 df.loc[df['TotalCharges'].isna()==True]
+# `tenure = 0` for `TotalCharges` columns. Convert TotalCharges to 0 for these entries.
+df[df['TotalCharges'].isna()==True] = 0
 # Group df by 'Churn' and compute the mean
 df.groupby(['Churn']).mean()
 df.groupby(['Churn']).median()

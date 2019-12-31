@@ -68,6 +68,10 @@ df[df['TotalCharges'].isna()==True] = 0
 df.gender.unique()
 df.Partner.unique()
 df.PhoneService.unique()
+# convert categorical values into numerical values
+df['gender'].replace(['Male','Female'],[0,1], inplace=True)
+df['Partner'].replace(['No', 'Yes'],[0,1], inplace=True)
+df['PhoneService'].replace(['No', 'Yes'],[0,1], inplace=True)
 # Group df by 'Churn' and compute the mean
 df.groupby(['Churn']).mean()
 df.groupby(['Churn']).median()

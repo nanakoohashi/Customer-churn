@@ -59,6 +59,9 @@ Discuss each column here:
 ### Does one state have more churners compared to another?
 ## Grouping and summarizing data
 ### .groupby()
+# Total charges contain entries that are not floats. Use ‘coerce’ - invalid parsing will be set as NaN
+df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors = 'coerce')
+df.loc[df['TotalCharges'].isna()==True]
 # Group df by 'Churn' and compute the mean
 df.groupby(['Churn']).mean()
 df.groupby(['Churn']).median()

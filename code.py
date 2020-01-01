@@ -75,6 +75,7 @@ df.OnlineSecurity.unique()
 df.OnlineBackup.unique()
 df.DeviceProtection.unique()
 df.TechSupport.unique()
+df.StreamingTV.unique()
 # convert categorical values into numerical values
 df.gender.replace(['Male','Female'],[0,1], inplace=True)
 df.Partner.replace(['No', 'Yes'],[0,1], inplace=True)
@@ -86,6 +87,7 @@ df.OnlineSecurity.replace(['No internet service','No', 'Yes'], [0,0,1], inplace=
 df.OnlineBackup.replace(['No internet service','No', 'Yes'], [0,0,1], inplace=True)
 df.DeviceProtection.replace(['No internet service','No', 'Yes'], [0,0,1], inplace=True)
 df.TechSupport.replace(['No internet service','No', 'Yes'], [0,0,1], inplace=True)
+df.StreamingTV.replace(['No internet service','No', 'Yes'], [0,0,1], inplace=True)
 # Group df by 'Churn' and compute the mean
 df.groupby(['Churn']).mean()
 df.groupby(['Churn']).median()

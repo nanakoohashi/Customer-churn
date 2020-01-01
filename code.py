@@ -1,4 +1,4 @@
-# Import all packagees and set plots to be embedded inline
+# Import all packages and set plots to be embedded inline
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -71,6 +71,7 @@ df.Dependents.unique()
 df.PhoneService.unique()
 df.MultipleLines.unique()
 df.InternetService.unique()
+df.OnlineSecurity.unique()
 # convert categorical values into numerical values
 df.gender.replace(['Male','Female'],[0,1], inplace=True)
 df.Partner.replace(['No', 'Yes'],[0,1], inplace=True)
@@ -78,6 +79,7 @@ df.Dependents.replace(['Yes','No'],[1,0], inplace=True)
 df.PhoneService.replace(['No', 'Yes'],[0,1], inplace=True)
 df.MultipleLines.replace(['No phone service','No', 'Yes'], [0,0,1], inplace=True)
 df.InternetService.replace(['No', 'DSL', 'Fiber optic'], [0,1,2], inplace=True)
+df.OnlineSecurity.replace(['No internet service','No', 'Yes'], [0,0,1], inplace=True)
 # Group df by 'Churn' and compute the mean
 df.groupby(['Churn']).mean()
 df.groupby(['Churn']).median()

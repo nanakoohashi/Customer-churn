@@ -67,12 +67,14 @@ df[df['TotalCharges'].isna()==True] = 0
 # Unique values for categorical column entries
 df.gender.unique()
 df.Partner.unique()
+df.Dependents.unique()
 df.PhoneService.unique()
 df.MultipleLines.unique()
 df.InternetService.unique()
 # convert categorical values into numerical values
 df.gender.replace(['Male','Female'],[0,1], inplace=True)
 df.Partner.replace(['No', 'Yes'],[0,1], inplace=True)
+df.Dependents.replace(['Yes','No'],[1,0], inplace=True)
 df.PhoneService.replace(['No', 'Yes'],[0,1], inplace=True)
 df.MultipleLines.replace(['No phone service','No', 'Yes'], [0,0,1], inplace=True)
 df.InternetService.replace(['No', 'DSL', 'Fiber optic'], [0,1,2], inplace=True)

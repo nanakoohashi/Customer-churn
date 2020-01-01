@@ -73,6 +73,7 @@ df.MultipleLines.unique()
 df.InternetService.unique()
 df.OnlineSecurity.unique()
 df.OnlineBackup.unique()
+df.DeviceProtection.unique()
 # convert categorical values into numerical values
 df.gender.replace(['Male','Female'],[0,1], inplace=True)
 df.Partner.replace(['No', 'Yes'],[0,1], inplace=True)
@@ -82,6 +83,7 @@ df.MultipleLines.replace(['No phone service','No', 'Yes'], [0,0,1], inplace=True
 df.InternetService.replace(['No', 'DSL', 'Fiber optic'], [0,1,2], inplace=True)
 df.OnlineSecurity.replace(['No internet service','No', 'Yes'], [0,0,1], inplace=True)
 df.OnlineBackup.replace(['No internet service','No', 'Yes'], [0,0,1], inplace=True)
+df.DeviceProtection.replace(['No internet service','No', 'Yes'], [0,0,1], inplace=True)
 # Group df by 'Churn' and compute the mean
 df.groupby(['Churn']).mean()
 df.groupby(['Churn']).median()

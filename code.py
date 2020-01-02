@@ -124,5 +124,6 @@ df.groupby(['Churn']).mean()
 df.groupby(['Churn']).median()
 # Group df by 'Churn' and compute the standard deviation
 df.groupby(['Churn']).std()
-df.groupby('gender')['Churn'].value_counts()
-df.groupby('SeniorCitizen')['Churn'].value_counts()
+# Bar plot of churn
+y = df["Churn"].value_counts()
+sns.barplot(y.index, y.values)

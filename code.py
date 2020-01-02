@@ -79,6 +79,7 @@ df.StreamingTV.unique()
 df.StreamingMovies.unique()
 df.Contract.unique()
 df.PaperlessBilling.unique()
+df.PaymentMethod.unique()
 # convert categorical values into numerical values
 df.gender.replace(['Male','Female'],[0,1], inplace=True)
 df.Partner.replace(['No', 'Yes'],[0,1], inplace=True)
@@ -94,6 +95,7 @@ df.StreamingTV.replace(['No internet service','No', 'Yes'], [0,0,1], inplace=Tru
 df.StreamingMovies.replace(['No internet service','No', 'Yes'], [0,0,1], inplace=True)
 df.Contract.replace(['Month-to-month','One year', 'Two year'], [0,1,2], inplace=True)
 df.PaperlessBilling.replace(['No', 'Yes'], [0,1], inplace=True)
+df.PaymentMethod.replace(['Electronic check', 'Mailed check', 'Bank transfer (automatic)', 'Credit card (automatic)'], [1,2,3,4], inplace=True)
 # Group df by 'Churn' and compute the mean
 df.groupby(['Churn']).mean()
 df.groupby(['Churn']).median()

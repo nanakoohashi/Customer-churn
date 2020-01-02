@@ -98,6 +98,27 @@ df.Contract.replace(['Month-to-month','One year', 'Two year'], [0,1,2], inplace=
 df.PaperlessBilling.replace(['No', 'Yes'], [0,1], inplace=True)
 df.PaymentMethod.replace(['Electronic check', 'Mailed check', 'Bank transfer (automatic)', 'Credit card (automatic)'], [1,2,3,4], inplace=True)
 df.Churn.replace(['No', 'Yes'], [0,1], inplace=True)
+
+## Legend
+"""- `gender`: Male = 0, Female = 1
+- `SeniorCitizen`: No = 0, Yes = 1
+- `Partner`: No = 0, Yes = 1
+- `Dependents`: No = 0, Yes = 1
+- `tenure`: # months
+- `PhoneService`: No = 0, Yes = 1
+- `MultipleLines`: No = 0, Yes = 1
+- `InternetService`: No = 0, DSL = 1, Fiber optic = 2
+- `OnlineSecurity`: No = 0, Yes = 1
+- `OnlineBackup`: No = 0, Yes = 1
+- `DeviceProtection`: No = 0, Yes = 1
+- `TechSupport`: No = 0, Yes = 1
+- `StreamingTV`: No = 0, Yes = 1
+- `StreamingMovies`: No = 0, Yes = 1
+- `Contract`: Month-to-month = 0, One year = 1, Two year = 2
+- `PaperlessBilling`: No = 0, Yes = 1
+- `PaymentMethod`: None = 0, Electronic check = 1, Mailed check = 2, Bank transfer (automatic) = 3, Credit Card (automatic) = 4
+- `Churn`: No = 0, Yes = 1"""
+
 # Group df by 'Churn' and compute the mean
 df.groupby(['Churn']).mean()
 df.groupby(['Churn']).median()

@@ -127,3 +127,6 @@ df.groupby(['Churn']).std()
 # Bar plot of churn
 y = df["Churn"].value_counts()
 sns.barplot(y.index, y.values)
+# Churn Percentage
+y_True = df["Churn"][df["Churn"] == True]
+print ("Churn Percentage = "+str( (y_True.shape[0] / df["Churn"].shape[0]) * 100 ))

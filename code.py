@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 %matplotlib inline
 from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
 
 # load Customer Data dataset into a pandas dataframe
 

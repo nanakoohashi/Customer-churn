@@ -27,7 +27,9 @@ sum(df.duplicated())
 # check null entries within data set
 df.isnull().sum()
 # Count how many churners and non-churners the dataset contains. 
-"""df['Churn'].value_counts()
+df['Churn'].value_counts()
+"""This dataset has 7,043 samples, and 21 attributes(2 integers, 1 float, and 18 objects).
+No variable column has null/missing values.
 Discuss each column here:
 - `customerID` - contains random values and has no effect on customer leaving telecommunications company.
 - `gender` - may play a role in a customer leaving the company. This column will be included.

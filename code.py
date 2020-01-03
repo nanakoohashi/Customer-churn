@@ -130,3 +130,8 @@ sns.barplot(y.index, y.values)
 # Churn Percentage
 y_True = df["Churn"][df["Churn"] == True]
 print ("Churn Percentage = "+str( (y_True.shape[0] / df["Churn"].shape[0]) * 100 ))
+# Relationship between churn and tenure
+sns.boxplot(x = 'Churn',
+           y = 'tenure', 
+            data = df)
+plt.show()

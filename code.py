@@ -1,3 +1,4 @@
+# Exploratory Analysis
 # Import all packages and set plots to be embedded inline
 import numpy as np
 import pandas as pd

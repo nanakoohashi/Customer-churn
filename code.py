@@ -135,3 +135,11 @@ sns.boxplot(x = 'Churn',
            y = 'tenure', 
             data = df)
 plt.show()
+# Correlation Heat Map
+corr = df.corr()
+sns.heatmap(corr, xticklabels = corr.columns.values, yticklabels = corr.columns.values, annot = True)
+heat_map = plt.gcf()
+heat_map.set_size_inches(18,14)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.show()

@@ -7,3 +7,4 @@ This repository contains a data mining report and data visualization to represen
 - Python 3
   - pandas
   - numPy
+  - pandas

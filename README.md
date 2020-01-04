@@ -4,4 +4,5 @@ A telecommunications company is concerned about the number of customers leaving 
 
 This repository contains a data mining report and data visualization to represent my findings of my data analysis.
 ## Technologies
-I have chosen to use Python 3 to complete this task.
+- Python 3
+  - pandas

@@ -12,3 +12,10 @@ This repository contains a data mining report and data visualization to represen
 ### Exploratory Analysis
 ### Data Visualization
 ### Building a Prediction Model
+## References
+•	Fong, W. (2019). Excel vs. Python for Data Analysis. Retrieved from https://xccelerate.co/blog/excel-vs-python-for-data-analysis
+•	McKinney, W. (2018). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython. Sebastopol, CA: O’Reilly Media, Inc.
+•	Navlani, A. (2018). Predicting Employee Churn in Python. Retrieved from https://www.datacamp.com/community/tutorials/predicting-employee-churn-python
+•	Navlani, A. (2019). Understanding Logistic Regression in Python. Retrieved from https://www.datacamp.com/community/tutorials/understanding-logistic-regression-python
+•	Nelli, F. (2015). Python Data Analytics: Data Analysis and Science Using Pandas, matplotlib, and the Python Programming Language, pp 2-3. Rome, Italy: Apress
+•	Winters, R. (2017). Practical Predictive Analytics. Birmingham, pp 161 UK: Packt

@@ -16,7 +16,12 @@ This repository contains a data mining report and data visualization to represen
 1. Customers Left
 2. Subplots
 3. Data Analysis and Visualization Summary
+### Cluster Analysis
 ### Building a Prediction Model
+1. Pre-Processing Data
+2. Split Train and Test Set
+3. Model Building
+### Evaluating Model Performance
 ## References
 -	Fong, W. (2019). Excel vs. Python for Data Analysis. Retrieved from https://xccelerate.co/blog/excel-vs-python-for-data-analysis
 -	McKinney, W. (2018). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython. Sebastopol, CA: O’Reilly Media, Inc.

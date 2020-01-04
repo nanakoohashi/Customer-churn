@@ -8,3 +8,5 @@ This repository contains a data mining report and data visualization to represen
   - pandas
   - numPy
   - pandas
+## Steps
+### Exploratory Analysis

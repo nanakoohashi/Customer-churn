@@ -10,3 +10,4 @@ This repository contains a data mining report and data visualization to represen
   - pandas
 ## Steps
 ### Exploratory Analysis
+### Data Visualization

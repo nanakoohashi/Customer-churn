@@ -11,3 +11,4 @@ This repository contains a data mining report and data visualization to represen
 ## Steps
 ### Exploratory Analysis
 ### Data Visualization
+### Building a Prediction Model

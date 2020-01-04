@@ -7,11 +7,15 @@ This repository contains a data mining report and data visualization to represen
 - Python 3
   - pandas
   - numPy
-  - pandas
 ## Steps
 ### Exploratory Analysis
 1. Importing Modules
+2. Loading Dataset
+3. Data Insights
 ### Data Visualization
+1. Customers Left
+2. Subplots
+3. Data Analysis and Visualization Summary
 ### Building a Prediction Model
 ## References
 -	Fong, W. (2019). Excel vs. Python for Data Analysis. Retrieved from https://xccelerate.co/blog/excel-vs-python-for-data-analysis

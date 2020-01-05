@@ -125,6 +125,9 @@ df.Churn.replace(['No', 'Yes'], [0,1], inplace=True)
 - `PaymentMethod`: None = 0, Electronic check = 1, Mailed check = 2, Bank transfer (automatic) = 3, Credit Card (automatic) = 4
 - `Churn`: No = 0, Yes = 1"""
 
+# Drop Customer ID column
+df = df.drop(['customerID'], axis = 1)
+
 # Group df by 'Churn' and compute the mean
 df.groupby(['Churn']).mean()
 df.groupby(['Churn']).median()

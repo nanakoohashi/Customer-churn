@@ -139,3 +139,6 @@ sns.countplot(data = df, x = 'Churn')
 plt.title('Distribution of Churn')
 plt.ylabel('Frequency')
 plt.xlabel('Churn')
+# Calculate Churn Percentage
+churn_True = df["Churn"][df["Churn"] == True]
+print ("Churn Percentage = "+ str( (churn_True.shape[0] / df["Churn"].shape[0]) * 100 ) +("%"))

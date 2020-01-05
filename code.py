@@ -127,6 +127,7 @@ df.Churn.replace(['No', 'Yes'], [0,1], inplace=True)
 
 # Drop Customer ID column
 df = df.drop(['customerID'], axis = 1)
+df.info()
 
 # Group df by 'Churn' and compute the mean
 df.groupby(['Churn']).mean()

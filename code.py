@@ -131,25 +131,11 @@ df.info()
 
 # Group df by 'Churn' and compute the mean
 df.groupby(['Churn']).mean()
-df.groupby(['Churn']).median()
 # Group df by 'Churn' and compute the standard deviation
 df.groupby(['Churn']).std()
-# Bar plot of churn
-y = df["Churn"].value_counts()
-sns.barplot(y.index, y.values)
-# Churn Percentage
-y_True = df["Churn"][df["Churn"] == True]
-print ("Churn Percentage = "+str( (y_True.shape[0] / df["Churn"].shape[0]) * 100 ))
-# Relationship between churn and tenure
-sns.boxplot(x = 'Churn',
-           y = 'tenure', 
-            data = df)
-plt.show()
-# Correlation Heat Map
-corr = df.corr()
-sns.heatmap(corr, xticklabels = corr.columns.values, yticklabels = corr.columns.values, annot = True)
-heat_map = plt.gcf()
-heat_map.set_size_inches(18,14)
-plt.xticks(fontsize=12)
-plt.yticks(fontsize=12)
-plt.show()
+df.describe()
+# Data Visualization
+sns.countplot(data = df, x = 'Churn')
+plt.title('Distribution of Churn')
+plt.ylabel('Frequency')
+plt.xlabel('Churn')

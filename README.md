@@ -7,6 +7,8 @@ This repository contains a data mining report and data visualization to represen
 - Python 3
   - pandas
   - numPy
+  - seaborn
+  - scikit-learn
 ## Steps
 ### Exploratory Analysis
 1. Importing Modules

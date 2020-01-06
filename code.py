@@ -146,3 +146,5 @@ print ("Churn Percentage = "+ str( (churn_True.shape[0] / df["Churn"].shape[0]) 
 ## Categorical Variables
 df.hist(column = 'MonthlyCharges', bins=20, figsize=(8,4))
 plt.show()
+df.hist(column = 'TotalCharges', bins=20, figsize=(8,4))
+plt.show()

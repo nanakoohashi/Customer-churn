@@ -142,3 +142,7 @@ plt.xlabel('Churn')
 # Calculate Churn Percentage
 churn_True = df["Churn"][df["Churn"] == True]
 print ("Churn Percentage = "+ str( (churn_True.shape[0] / df["Churn"].shape[0]) * 100 ) +("%"))
+# Univariate Exploration
+## Categorical Variables
+df.hist(column = 'MonthlyCharges', bins=20, figsize=(8,4))
+plt.show()

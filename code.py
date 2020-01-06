@@ -152,3 +152,4 @@ df.hist(column = 'tenure', bins=20, figsize=(8,4))
 plt.show()
 ## Continuous Variables
 sns.countplot(x = 'gender', data = df)
+sns.countplot(x = 'SeniorCitizen', data = df)

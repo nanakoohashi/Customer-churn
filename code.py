@@ -153,3 +153,4 @@ plt.show()
 ## Continuous Variables
 sns.countplot(x = 'gender', data = df)
 sns.countplot(x = 'SeniorCitizen', data = df)
+sns.countplot(x = 'Partner', data = df)

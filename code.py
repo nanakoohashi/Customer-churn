@@ -150,3 +150,5 @@ df.hist(column = 'TotalCharges', bins=20, figsize=(8,4))
 plt.show()
 df.hist(column = 'tenure', bins=20, figsize=(8,4))
 plt.show()
+## Continuous Variables
+sns.countplot(x = 'gender', data = df)

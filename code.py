@@ -143,15 +143,16 @@ plt.xlabel('Churn')
 churn_True = df["Churn"][df["Churn"] == True]
 print ("Churn Percentage = "+ str( (churn_True.shape[0] / df["Churn"].shape[0]) * 100 ) +("%"))
 # Univariate Exploration
-## Categorical Variables
+## Continuous Variables
 df.hist(column = 'MonthlyCharges', bins=20, figsize=(8,4))
 plt.show()
 df.hist(column = 'TotalCharges', bins=20, figsize=(8,4))
 plt.show()
 df.hist(column = 'tenure', bins=20, figsize=(8,4))
 plt.show()
-## Continuous Variables
+## Categorical Variables
 sns.countplot(x = 'gender', data = df)
 sns.countplot(x = 'SeniorCitizen', data = df)
 sns.countplot(x = 'Partner', data = df)
 sns.countplot(x = 'Dependents', data = df)
+sns.countplot(x = 'PhoneService', data = df)

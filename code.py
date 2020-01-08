@@ -1,13 +1,23 @@
 # Exploratory Analysis
-# Import all packages and set plots to be embedded inline
+
+## Importing the Libraries
+# import all packages and set plots to be embedded inline
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from matplotlib.pyplot import show
 import seaborn as sns
 %matplotlib inline
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from pylab import rcParams
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import (train_test_split, GridSearchCV, RandomizedSearchCV)
+from sklearn.metrics import (roc_auc_score, roc_curve, classification_report)
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+from sklearn.ensemble import (GradientBoostingClassifier,RandomForestClassifier)
+from scipy import stats
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+from statsmodels.tools.tools import add_constant
 
 # load Customer Data dataset into a pandas dataframe
 

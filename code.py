@@ -192,3 +192,5 @@ sns.countplot(data = df, x = 'gender', hue = 'Churn')
 sns.countplot(data = df, x = 'SeniorCitizen', hue = 'Churn')
 sns.countplot(data = df, x = 'Partner', hue = 'Churn')
 sns.countplot(data = df, x = 'Dependents', hue = 'Churn')
+# Group all continuous variables
+numeric = df[['tenure', 'MonthlyCharges', 'TotalCharges']]

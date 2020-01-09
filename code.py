@@ -177,3 +177,14 @@ sns.countplot(x = 'StreamingMovies', data = df)
 sns.countplot(x = 'Contract', data = df)
 sns.countplot(x = 'PaperlessBilling', data = df)
 sns.countplot(x = 'PaymentMethod', data = df)
+
+# Bivariate Exploration
+## Explore relationships with each variable and churn
+# heatmap
+corr = df.corr()
+sns.heatmap(corr, xticklabels = corr.columns.values, yticklabels = corr.columns.values, annot = True)
+heat_map = plt.gcf()
+heat_map.set_size_inches(18,14)
+plt.xticks(fontsize=14)
+plt.yticks(fontsize=14)
+plt.show()

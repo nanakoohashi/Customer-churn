@@ -194,3 +194,9 @@ sns.countplot(data = df, x = 'Partner', hue = 'Churn')
 sns.countplot(data = df, x = 'Dependents', hue = 'Churn')
 # Group all continuous variables
 numeric = df[['tenure', 'MonthlyCharges', 'TotalCharges']]
+# Plot continuous variables against churn
+numeric = pd.concat([numeric, df["Churn"]],axis=1) #Add the 'Churn' variable to the numeric dataset
+g = sns.PairGrid(numeric.sample(n=1000), hue="Churn")
+g = g.map_offdiag(plt.scatter, linewidths=1, edgecolor="w", s=40)
+g = g.map_diag(sns.kdeplot)
+g = g.add_legend()

@@ -246,3 +246,9 @@ X = add_constant(df2)
 >>> pd.Series([variance_inflation_factor(X.values, i) 
                for i in range(X.shape[1])], 
               index=X.columns)
+"""If VIF > 10, then multicollinearity is high.
+
+Ignore columns with dummy variables with high VIFs - If you have high VIFs for dummy variables representing nominal variables with three or more categories, those are usually not a problem (Statistics How To, 2015).
+
+We will remove MonthlyCharges from the analysis."""
+df3 = df2[['tenure', 'TotalCharges', 'InternetService', 'PaymentMethod', 'Contract', 'Churn']]

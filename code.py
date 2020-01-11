@@ -252,3 +252,8 @@ Ignore columns with dummy variables with high VIFs - If you have high VIFs for d
 
 We will remove MonthlyCharges from the analysis."""
 df3 = df2[['tenure', 'TotalCharges', 'InternetService', 'PaymentMethod', 'Contract', 'Churn']]
+# Check if there is any highly correlated variables remaining
+X = add_constant(df3)
+pd.Series([variance_inflation_factor(X.values, i) 
+               for i in range(X.shape[1])], 
+              index=X.columns)

@@ -215,3 +215,18 @@ sns.countplot(data = df, x = 'PaymentMethod', hue = 'Churn')
 sns.regplot(data = df, x = 'tenure', y = 'MonthlyCharges')
 sns.regplot(data = df, x = 'tenure', y = 'TotalCharges')
 sns.regplot(data = df, x = 'MonthlyCharges', y = 'TotalCharges')
+
+# Feature Selection
+from sklearn.ensemble import ExtraTreesClassifier
+model = ExtraTreesClassifier()
+X = df[['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 
+        'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+        'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges']]
+y = df.Churn
+model.fit(X,y)
+print(model.feature_importances_) #use inbuilt class feature_importances of tree based classifiers
+#plot graph of feature importances for better visualization
+feat_importances = pd.Series(model.feature_importances_, index=X.columns)
+feat_importances.nlargest(10).plot(kind='barh')
+plt.title('Which Features Affect Churn the Most?')
+plt.show()

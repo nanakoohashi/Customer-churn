@@ -241,3 +241,8 @@ Contract
 InternetService
 We will disregard the other categories for the rest of the analysis."""
 df2 = df[['tenure', 'TotalCharges', 'MonthlyCharges', 'InternetService', 'PaymentMethod', 'Contract', 'Churn']]
+# Detecting Multicollinearity
+X = add_constant(df2)
+>>> pd.Series([variance_inflation_factor(X.values, i) 
+               for i in range(X.shape[1])], 
+              index=X.columns)

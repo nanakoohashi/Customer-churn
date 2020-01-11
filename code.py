@@ -230,3 +230,14 @@ feat_importances = pd.Series(model.feature_importances_, index=X.columns)
 feat_importances.nlargest(10).plot(kind='barh')
 plt.title('Which Features Affect Churn the Most?')
 plt.show()
+"""Observations
+The features that have the most importance are:
+
+tenure
+TotalCharges
+MonthlyCharges
+Payment Method
+Contract
+InternetService
+We will disregard the other categories for the rest of the analysis."""
+df2 = df[['tenure', 'TotalCharges', 'MonthlyCharges', 'InternetService', 'PaymentMethod', 'Contract', 'Churn']]

@@ -267,3 +267,4 @@ pca = PCA(n_components=2)
 pca.fit(scaled_data)
 x_pca = pca.transform(scaled_data)
 x_pca 
+x_pca_df = pd.DataFrame(data = x_pca, columns = ['principal component 1', 'principal component 2'])

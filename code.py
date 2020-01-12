@@ -262,3 +262,6 @@ from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 scaler.fit(df)
 scaled_data = scaler.transform(df)
+from sklearn.decomposition import PCA
+pca = PCA(n_components=2)
+pca.fit(scaled_data)

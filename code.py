@@ -257,3 +257,7 @@ X = add_constant(df3)
 pd.Series([variance_inflation_factor(X.values, i) 
                for i in range(X.shape[1])], 
               index=X.columns)
+# Descriptive Method - PCA
+from sklearn.preprocessing import StandardScaler
+scaler = StandardScaler()
+scaler.fit(df)

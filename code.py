@@ -261,3 +261,4 @@ pd.Series([variance_inflation_factor(X.values, i)
 from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 scaler.fit(df)
+scaled_data = scaler.transform(df)

@@ -269,3 +269,4 @@ x_pca = pca.transform(scaled_data)
 x_pca 
 x_pca_df = pd.DataFrame(data = x_pca, columns = ['principal component 1', 'principal component 2'])
 x_pca_df.tail()
+print('Explained variation per principal component: {}'.format(pca.explained_variance_ratio_))

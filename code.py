@@ -265,3 +265,5 @@ scaled_data = scaler.transform(df)
 from sklearn.decomposition import PCA
 pca = PCA(n_components=2)
 pca.fit(scaled_data)
+x_pca = pca.transform(scaled_data)
+x_pca 

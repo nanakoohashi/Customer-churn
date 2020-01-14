@@ -311,3 +311,5 @@ heatmap.yaxis.set_ticklabels(heatmap.yaxis.get_ticklabels(), rotation=0, ha='rig
 heatmap.xaxis.set_ticklabels(heatmap.xaxis.get_ticklabels(), rotation=45, ha='right', fontsize = 14)
 plt.ylabel('True label', fontsize = 14)
 plt.xlabel('Predicted label', fontsize = 14)
+
+print(logisticRegr.coef_)

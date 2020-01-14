@@ -316,3 +316,5 @@ print(logisticRegr.coef_)
 
 feat_importances = pd.Series(logisticRegr.coef_[0], index=train.columns)
 feat_importances.nlargest(10).plot(kind='barh')
+
+df.Churn.value_counts()

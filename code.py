@@ -333,3 +333,21 @@ random_state=1) #set the seed for random resampling
 data_upsampled = pd.concat([data_majority, data_minority_upsampled])
 
 data_upsampled['Churn'].value_counts()
+
+train, test = train_test_split(data_upsampled, test_size = 0.25)
+
+train_y_upsampled = train['Churn']
+test_y_upsampled = test['Churn']
+
+train_x_upsampled = train
+train_x_upsampled.pop('Churn')
+test_x_upsampled = test
+test_x_upsampled.pop('Churn')
+
+logisticRegr_balanced = LogisticRegression()
+logisticRegr_balanced.fit(X=train_x_upsampled, y=train_y_upsampled)
+
+test_y_pred_balanced = logisticRegr_balanced.predict(test_x_upsampled)
+print('Accuracy of logistic regression classifier on test set: {:.2f}'.format(logisticRegr_balanced.score(test_x_upsampled, 
+                                                                                                          test_y_upsampled)))
+print(classification_report(test_y_upsampled, test_y_pred_balanced))

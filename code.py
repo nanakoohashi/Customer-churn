@@ -356,3 +356,11 @@ logisticRegr2= LogisticRegression()
 logisticRegr2.fit(X=train_x_upsampled, y=train_y_upsampled)
 feat_importances = pd.Series(logisticRegr2.coef_[0], index=train.columns)
 feat_importances.nlargest(10).plot(kind='barh')
+
+#The overall accuracy has decreased, but the precision and recall scores for predicting a churn have increased.
+
+# Tree-Based Algorithms - Random Forest Classifier
+from sklearn.ensemble import RandomForestClassifier
+classifier = RandomForestClassifier(n_estimators=200, random_state=0)
+classifier.fit(train_x, train_y)
+predictions = classifier.predict(test_x)

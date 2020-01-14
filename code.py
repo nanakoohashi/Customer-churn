@@ -277,3 +277,6 @@ plt.scatter(x_pca[:,0],x_pca[:,1],c=df3['Churn'], cmap='rainbow')
 plt.xlabel('First principal component')
 plt.ylabel('Second Principal Component')
 pca.components_
+map= pd.DataFrame(pca.components_,columns=df.columns)
+plt.figure(figsize=(12,6))
+sns.heatmap(map,cmap='twilight')

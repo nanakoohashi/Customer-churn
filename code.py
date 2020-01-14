@@ -280,3 +280,15 @@ pca.components_
 map= pd.DataFrame(pca.components_,columns=df.columns)
 plt.figure(figsize=(12,6))
 sns.heatmap(map,cmap='twilight')
+
+# Predictive Analysis - Logistic Regression
+from sklearn.model_selection import train_test_split
+train, test = train_test_split(df3, test_size = 0.25)
+ 
+train_y = train['Churn']
+test_y = test['Churn']
+ 
+train_x = train
+train_x.pop('Churn')
+test_x = test
+test_x.pop('Churn')

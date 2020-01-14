@@ -351,3 +351,8 @@ test_y_pred_balanced = logisticRegr_balanced.predict(test_x_upsampled)
 print('Accuracy of logistic regression classifier on test set: {:.2f}'.format(logisticRegr_balanced.score(test_x_upsampled, 
                                                                                                           test_y_upsampled)))
 print(classification_report(test_y_upsampled, test_y_pred_balanced))
+
+logisticRegr2= LogisticRegression()
+logisticRegr2.fit(X=train_x_upsampled, y=train_y_upsampled)
+feat_importances = pd.Series(logisticRegr2.coef_[0], index=train.columns)
+feat_importances.nlargest(10).plot(kind='barh')

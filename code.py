@@ -292,3 +292,22 @@ train_x = train
 train_x.pop('Churn')
 test_x = test
 test_x.pop('Churn')
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix, classification_report
+ 
+logisticRegr = LogisticRegression()
+logisticRegr.fit(X=train_x, y=train_y)
+ 
+test_y_pred = logisticRegr.predict(test_x)
+confusion_matrix = confusion_matrix(test_y, test_y_pred)
+print('Intercept: ' + str(logisticRegr.intercept_))
+print('Regression: ' + str(logisticRegr.coef_))
+print('Accuracy of logistic regression classifier on test set: {:.2f}'.format(logisticRegr.score(test_x, test_y)))
+print(classification_report(test_y, test_y_pred))
+ 
+confusion_matrix_df = pd.DataFrame(confusion_matrix, ('No churn', 'Churn'), ('No churn', 'Churn'))
+heatmap = sns.heatmap(confusion_matrix_df, annot=True, annot_kws={"size": 20}, fmt="d")
+heatmap.yaxis.set_ticklabels(heatmap.yaxis.get_ticklabels(), rotation=0, ha='right', fontsize = 14)
+heatmap.xaxis.set_ticklabels(heatmap.xaxis.get_ticklabels(), rotation=45, ha='right', fontsize = 14)
+plt.ylabel('True label', fontsize = 14)
+plt.xlabel('Predicted label', fontsize = 14)

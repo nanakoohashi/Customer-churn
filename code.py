@@ -276,3 +276,4 @@ plt.figure(figsize=(8,6))
 plt.scatter(x_pca[:,0],x_pca[:,1],c=df3['Churn'], cmap='rainbow')
 plt.xlabel('First principal component')
 plt.ylabel('Second Principal Component')
+pca.components_

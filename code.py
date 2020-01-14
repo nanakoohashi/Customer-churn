@@ -272,3 +272,7 @@ x_pca_df.tail()
 print('Explained variation per principal component: {}'.format(pca.explained_variance_ratio_))
 scaled_data.shape
 x_pca.shape
+plt.figure(figsize=(8,6))
+plt.scatter(x_pca[:,0],x_pca[:,1],c=df3['Churn'], cmap='rainbow')
+plt.xlabel('First principal component')
+plt.ylabel('Second Principal Component')

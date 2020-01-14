@@ -271,3 +271,4 @@ x_pca_df = pd.DataFrame(data = x_pca, columns = ['principal component 1', 'princ
 x_pca_df.tail()
 print('Explained variation per principal component: {}'.format(pca.explained_variance_ratio_))
 scaled_data.shape
+x_pca.shape

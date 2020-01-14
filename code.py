@@ -313,3 +313,6 @@ plt.ylabel('True label', fontsize = 14)
 plt.xlabel('Predicted label', fontsize = 14)
 
 print(logisticRegr.coef_)
+
+feat_importances = pd.Series(logisticRegr.coef_[0], index=train.columns)
+feat_importances.nlargest(10).plot(kind='barh')

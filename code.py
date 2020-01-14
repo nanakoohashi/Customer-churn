@@ -318,3 +318,18 @@ feat_importances = pd.Series(logisticRegr.coef_[0], index=train.columns)
 feat_importances.nlargest(10).plot(kind='barh')
 
 df.Churn.value_counts()
+
+## Up-sampling the minority class
+from sklearn.utils import resample
+
+data_majority = df3[df3['Churn']==0]
+data_minority = df3[df3['Churn']==1]
+
+data_minority_upsampled = resample(data_minority,
+replace=True,
+n_samples=4653, #same number of samples as majority class
+random_state=1) #set the seed for random resampling
+# Combine resampled results
+data_upsampled = pd.concat([data_majority, data_minority_upsampled])
+
+data_upsampled['Churn'].value_counts()

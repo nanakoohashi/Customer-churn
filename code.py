@@ -374,3 +374,6 @@ classifier.feature_importances_
 X.columns
 
 train.columns
+
+feat_importances = pd.Series(classifier.feature_importances_, index=train.columns)
+feat_importances.nlargest(10).plot(kind='barh')

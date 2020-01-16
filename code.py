@@ -370,3 +370,5 @@ print(classification_report(test_y, predictions))
 print(accuracy_score(test_y, predictions))
 
 classifier.feature_importances_
+
+X.columns

@@ -364,3 +364,7 @@ from sklearn.ensemble import RandomForestClassifier
 classifier = RandomForestClassifier(n_estimators=200, random_state=0)
 classifier.fit(train_x, train_y)
 predictions = classifier.predict(test_x)
+
+from sklearn.metrics import classification_report, accuracy_score
+print(classification_report(test_y, predictions))  
+print(accuracy_score(test_y, predictions))

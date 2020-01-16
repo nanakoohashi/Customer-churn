@@ -368,3 +368,5 @@ predictions = classifier.predict(test_x)
 from sklearn.metrics import classification_report, accuracy_score
 print(classification_report(test_y, predictions))  
 print(accuracy_score(test_y, predictions))
+
+classifier.feature_importances_
